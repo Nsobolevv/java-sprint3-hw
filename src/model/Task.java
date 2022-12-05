@@ -1,5 +1,4 @@
 package src.model;
-
 import java.util.Objects;
 import static src.model.StatusTrecker.NEW;
 

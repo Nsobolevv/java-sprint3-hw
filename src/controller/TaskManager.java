@@ -34,7 +34,6 @@ public class TaskManager {
         }
         return newTask;
     }
-
     // Обновление задачи по ID
     public Task updateTask(Task task) {
         final Task originalTask = tasks.get(task.getId());
@@ -54,5 +53,4 @@ public class TaskManager {
         tasks.remove(id);
         return deletedTask;
     }
-
 }
