@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 
 public class EpicManager {
-    HashMap<Integer, Epic> epics = new HashMap<>();
-    Integer counterIDEpics = 0;
+    protected HashMap<Integer, Epic> epics = new HashMap<>();
+    protected Integer counterIDEpics = 0;
 
     // Получение списка всех эпиков
     public ArrayList<Epic> findAll() {

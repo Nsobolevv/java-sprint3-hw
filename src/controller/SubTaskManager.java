@@ -7,9 +7,9 @@ import static src.model.StatusTrecker.*;
 
 
 public class SubTaskManager {
-    private Integer counterIDSubTasks = 0;
-    private HashMap<Integer, SubTask> subTasks = new HashMap<>();
-    EpicManager epicManager;
+    protected Integer counterIDSubTasks = 0;
+    protected HashMap<Integer, SubTask> subTasks = new HashMap<>();
+    protected EpicManager epicManager;
 
     public SubTaskManager(EpicManager epicManager) {
         this.epicManager = epicManager;

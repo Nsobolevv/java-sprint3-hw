@@ -9,15 +9,12 @@ public class Task {
     protected Integer id;
     protected String status;
 
-    public Task() {
-        this("Задача", "Описание", -1, NEW);
-               }
     public Task(String name, String description, Integer id) {
             this.name = name;
             this.description = description;
             this.id = id;
             this.status = NEW;
-        }
+    }
 
     public Task(String name, String description, Integer id, String status) {
             this.name = name;
@@ -26,27 +23,34 @@ public class Task {
             this.status = status;
         }
 
-    public String getName() {
+        public String getName() {
             return name;
         }
+
         public void setName(String name) {
             this.name = name;
         }
+
         public String getDescription() {
             return description;
         }
+
         public void setDescription(String description) {
             this.description = description;
         }
+
         public Integer getId() {
             return id;
         }
+
         public String getStatus() {
             return status;
         }
+
         public void setStatus(String status) {
             this.status = status;
         }
+
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
@@ -57,6 +61,7 @@ public class Task {
                     && Objects.equals(getId(), task.getId())
                     && Objects.equals(getStatus(), task.getStatus());
         }
+
         @Override
         public int hashCode() {
             return Objects.hash(getName(), getDescription(), getId(), getStatus());
@@ -72,7 +77,5 @@ public class Task {
                     '}';
         }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+
 }

@@ -1,4 +1,5 @@
 package src;
+import src.controller.Manager;
 import src.model.Epic;
 import src.model.SubTask;
 import src.model.Task;
@@ -11,10 +12,11 @@ public class Main {
         System.out.println("Начинаем тестирование ");
         Manager manager = new Manager();
         System.out.println("Метод createTask(task).");
-        final Task task = new Task();
+        final Task task = new Task("Задача", "Описание", -1, NEW);
+        final Task task2 = new Task("Задача 2", "Описание", -1, NEW);
         System.out.println("Создаем 2 задачи");
         final Task createdTask = manager.createTask(task);
-        final Task createdTask1 = manager.createTask(task);
+        final Task createdTask1 = manager.createTask(task2);
         System.out.println("Печатаем содержание 2х задач");
         System.out.println(createdTask);
         System.out.println(createdTask1);

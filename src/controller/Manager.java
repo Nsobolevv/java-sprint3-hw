@@ -1,4 +1,4 @@
-package src;
+package src.controller;
 import src.controller.EpicManager;
 import src.controller.SubTaskManager;
 import src.controller.TaskManager;

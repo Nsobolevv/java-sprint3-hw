@@ -2,7 +2,7 @@ package src.model;
 import java.util.Objects;
 
 public class SubTask extends Task {
-    private Integer epicID;
+    protected Integer epicID;
     public SubTask(String name, String description, Integer id, Integer epicID) {
         super(name, description, id);
         this.epicID = epicID;

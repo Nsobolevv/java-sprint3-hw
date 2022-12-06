@@ -5,8 +5,8 @@ import java.util.HashMap;
 
 
 public class TaskManager {
-    private HashMap<Integer, Task> tasks = new HashMap<>();
-    private Integer counterIDTasks = 0;
+    protected HashMap<Integer, Task> tasks = new HashMap<>();
+    protected Integer counterIDTasks = 0;
 
     // Получение списка всех задач
     public ArrayList<Task> findAll() {
